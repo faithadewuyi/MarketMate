@@ -27,6 +27,7 @@ export default {
       fontFamily: {
         poppins: ['Poppins', 'sans-serif'],
         poppinsbold: ['Poppins', 'sans-serif', '700'],
+        catamara: ["Catamaran", 'sans-serif',]
       },
       spacing: {
         0: '0',
