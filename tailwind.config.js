@@ -22,8 +22,10 @@ export default {
         darkred: '#920100',
         secblue: '#184172',
         dgray: '#D0D0D0',
-        darkblue: '#0E2744',
+        darkblue: '#13345B',
         textcol: '#06101B',
+        gray:  '#828282'
+
       },
       fontFamily: {
         poppins: ['Poppins', 'sans-serif'],
