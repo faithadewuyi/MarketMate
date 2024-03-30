@@ -19,6 +19,7 @@ export default {
       
       colors: {
         mred: '#BC2B2A',
+        darkred: '#920100',
         secblue: '#184172',
         dgray: '#D0D0D0',
         darkblue: '#0E2744',
