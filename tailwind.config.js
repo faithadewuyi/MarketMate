@@ -3,28 +3,30 @@ export default {
   content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
   // content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
   theme: {
+    screens: {
+    xs: '320px',
+    sm: '375px',
+    sms: '386px',
+    smm: '410px',
+    sml: '500px',
+    md:  '667px',
+    mdl: '768px',
+    lg:  '960px',
+    lgl: '1024px',
+    xl: '1280px',
+  },
     extend: {
-      screens: {
-        xs: '320px',
-        sm: '375px',
-        sms: '386px',
-        smm: '410px',
-        sml: '500px',
-        md: '667px',
-        mdl: '768px',
-        lg: '960px',
-        lgl: '1024px',
-        xl: '1280px',
-      },
+      
       colors: {
         mred: '#BC2B2A',
         secblue: '#184172',
         dgray: '#D0D0D0',
         darkblue: '#0E2744',
+        textcol: '#06101B',
       },
       fontFamily: {
         poppins: ['Poppins', 'sans-serif'],
-        'poppins-bold': ['Poppins', 'sans-serif', '700'],
+        poppinsbold: ['Poppins', 'sans-serif', '700'],
       },
       spacing: {
         0: '0',
