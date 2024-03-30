@@ -5,9 +5,9 @@ const Login = () => {
   return (
     <div className='flex flex-col lg:flex-row justify-between items-center lg:space-x-4 w-[1305px]'>
      <img src={login} alt="login image" className="hidden lg:block w-[805px] h-[781px] pt-[75px] rounded-tr-lg rounded-lg p-4" />
-      <form className="w-full lg:w-1/2 space-y-4">
-      <h2 className="lg:text-[38px] h-[58px] font-catamara text-[] ">Login to Exclusive</h2>
-      <h3 className="lg:hidden">Log in to <span>MarketMate</span></h3>
+      <form className="w-full lg:w-1/2 space-y-4 md: p-5 align-center" >
+      <h2 className=" md: hidden lg:text-[38px] h-[58px] font-catamara text-[] ">Login to Exclusive</h2>
+      <h3 className="lg:hidden md: w-[299px] text-[38px] ">Log in to <span className='text-mred font-bold font-catamara'>MarketMate</span></h3>
       <div>
         <p className="block mb-2 lg:text-[16px] text-textcol font-poppins">Enter your details below</p>
         <input className="w-[370px] p-2 border rounded-md" placeholder="Email or Phone Number" />
@@ -23,7 +23,7 @@ const Login = () => {
       </div>
       <button type="button" className="inline-flex items-center  font-medium text-gray-800 border rounded-lg bg-white hover:bg-gray-100 lg:w-[365px] lg: h-[56px]  gap-2 py-2 px-10">
       <img src={google} alt="Google logo" className=" w-2 h-5 " />
-      Log in with Google
+      Sign in with Google
     </button>
     </form>
 </div>
