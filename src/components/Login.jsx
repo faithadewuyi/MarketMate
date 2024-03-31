@@ -1,7 +1,9 @@
+
 import login from '../assets/login.png'
 import { Link } from 'react-router-dom';
 import google from '../assets/google.svg';
 const Login = () => {
+ 
   return (
     <div className='flex flex-col lg:flex-row justify-between items-center lg:space-x-4 w-[1305px]'>
      <img src={login} alt="login image" className="hidden lg:block w-[805px] h-[781px] pt-[75px] rounded-tr-lg rounded-lg p-4" />
