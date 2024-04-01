@@ -1,4 +1,4 @@
-import React from "react";
+
 
 function Footer() {
   return (
@@ -78,18 +78,18 @@ function Footer() {
             <ul>
               <li className="text-base pb-1.2">Get In Touch</li>
               <li className="flex pb-1 text-xs">
-                <span class="material-symbols-outlined">call</span>
+                <span className="material-symbols-outlined">call</span>
                 <p>(234)800 555-0103</p>
               </li>
               <li className="pb-1 text-xs">
                 <a href="" className="flex">
-                  <span class="material-symbols-outlined">location_on</span>
+                  <span className="material-symbols-outlined">location_on</span>
                   <p>314 Lekki Phase 1. Lagos, Nigeria</p>
                 </a>
               </li>
               <li>
                 <a href="#" className="flex text-xs">
-                  <span class="material-symbols-outlined">mail</span>
+                  <span className="material-symbols-outlined">mail</span>
                   <p>debra.holt@example.com</p>
                 </a>
               </li>
@@ -100,9 +100,9 @@ function Footer() {
               Made With Love By Tech Amazons All Right Reserved
             </p>
             <div className="flex space-x-2 pt-3 md:pt-0">
-              <i class="bx bxl-facebook-circle"></i>
-              <i class="bx bxl-instagram"></i>
-              <i class="bx bxl-twitter"></i>
+              <i className="bx bxl-facebook-circle"></i>
+              <i className="bx bxl-instagram"></i>
+              <i className="bx bxl-twitter"></i>
             </div>
           </div>
         </div>
