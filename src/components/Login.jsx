@@ -1,7 +1,10 @@
+
 import login from "../assets/login.png";
 import { Link } from "react-router-dom";
 import google from "../assets/google.svg";
+
 const Login = () => {
+ 
   return (
     <div className="flex flex-col lg:flex-row justify-between items-center lg:space-x-4 w-[1305px] mt-6">
       <img
@@ -9,13 +12,13 @@ const Login = () => {
         alt="login image"
         className="hidden lg:block w-[805px] h-[781px] pt-[75px] rounded-tr-lg rounded-lg p-4"
       />
-      <form className="w-full lg:w-1/2 space-y-4 md: p-5 align-center">
+      <form className="w-full lg:w-1/2 space-y-4 md: p-5 align-center ">
         <h2 className=" md: hidden lg:block lg:text-[38px] h-[58px] font-catamara text-[] ">
-          Login to Exclusive
+          Login to MarketMate
         </h2>
         <h3 className="lg:hidden md: w-[299px] text-[38px] ">
           Log in to{" "}
-          <span className="text-mred font-bold font-catamara">MarketMate</span>
+          <span className="text-mred font-bold font-lobstertwo">MarketMate</span>
         </h3>
         <div>
           <p className="block mb-2 lg:text-[16px] text-textcol font-poppins">
