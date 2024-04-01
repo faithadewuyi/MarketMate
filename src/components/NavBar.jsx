@@ -49,18 +49,18 @@ const NavBar = () => {
             <button>Home</button>
             <div className="flex">
               <button>Shop</button>
-              <span class="material-symbols-outlined">expand_more</span>
+              <span className="material-symbols-outlined">expand_more</span>
             </div>
             <button>About</button>
             <button>Contact</button>
             <button>Pages</button>
           </div>
           <div className="flex flex-row basis-5/12 space-x-3 justify-end text-gray font-poppins text-xs font-light">
-            <span class="material-symbols-outlined">search</span>
-            <span class="material-symbols-outlined">shopping_cart</span>
-            <span class="material-symbols-outlined">favorite</span>
+            <span className="material-symbols-outlined">search</span>
+            <span className="material-symbols-outlined">shopping_cart</span>
+            <span className="material-symbols-outlined">favorite</span>
             <div className="flex flex-row text-secblue font-bold">
-              <span class="material-symbols-outlined">person</span>
+              <span className="material-symbols-outlined">person</span>
               <div className="flex pt-0.5">
                 <button className="px-0.2">Login</button>/
                 <button className="px-0.2 ">Register</button>
