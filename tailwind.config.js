@@ -64,7 +64,7 @@ export default {
       fontFamily: {
         poppins: ["Poppins", "sans-serif"],
         poppinsbold: ["Poppins", "sans-serif", "700"],
-        catamara: ["Catamaran", "sans-serif"],
+        catamaran: ["Catamaran", "sans-serif"],
         lobstertwo: ["Lobster Two", "sans-serif"],
       },
       spacing: {

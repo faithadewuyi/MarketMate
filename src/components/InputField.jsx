@@ -1,7 +1,8 @@
 import React from "react";
+import PropTypes from "prop-types";
 
 const InputField = ({
-  label,
+  placeholder,
   type,
   id,
   name,
@@ -11,9 +12,9 @@ const InputField = ({
   patternMessage,
 }) => (
   <div>
-    <label htmlFor={id}>{label}</label>
     <div className={`${error ? "error-input" : ""}`}>
       <input
+        placeholder={placeholder}
         type={type || "text"}
         id={id}
         {...register(name, {
@@ -23,14 +24,15 @@ const InputField = ({
             message: patternMessage || "Invalid input format",
           },
         })}
+        className="w-[270px] p-2 border-b border-gray"
       />
     </div>
-    <p className="error">{error?.message}</p>
+    <p className="text-primaryred text-xs tracking-normal">{error?.message}</p>
   </div>
 );
 
 InputField.propTypes = {
-  label: PropTypes.string.isRequired,
+  placeholder: PropTypes.string,
   name: PropTypes.string.isRequired,
   type: PropTypes.string,
   register: PropTypes.func.isRequired,
