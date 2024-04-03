@@ -6,13 +6,13 @@ import google from "../assets/google.svg";
 const Login = () => {
  
   return (
-    <div className="flex flex-col lg:flex-row justify-between items-center lg:space-x-4 w-[1305px] mt-6">
+    <div className="flex flex-col lg:flex-row justify-between items-center lg:space-x-4 max-w-full w-full mt-6">
       <img
         src={login}
         alt="login image"
         className="hidden lg:block w-[805px] h-[781px] pt-[75px] rounded-tr-lg rounded-lg p-4"
       />
-      <form className="w-full lg:w-1/2 space-y-4 md: p-5 align-center ">
+      <form className="w-full lg:w-1/2 space-y-4 md: p-5 align-center">
         <h2 className=" md: hidden lg:block lg:text-[38px] h-[58px] font-catamara text-[] ">
           Login to MarketMate
         </h2>
