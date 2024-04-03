@@ -1,3 +1,5 @@
+
+import { Link } from "react-router-dom";
 import {
   FaPhone,
   FaRegEnvelope,
@@ -52,7 +54,7 @@ const NavBar = () => {
               <span className="material-symbols-outlined">expand_more</span>
             </div>
             <button>About</button>
-            <button>Contact</button>
+           <Link to="/contact"> <button>Contact</button></Link>
             <button>Pages</button>
           </div>
           <div className="flex flex-row basis-5/12 space-x-3 justify-end text-gray font-poppins text-xs font-light">
