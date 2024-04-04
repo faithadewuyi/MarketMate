@@ -51,7 +51,7 @@ const Login = () => {
           className=" lg:w-1/2 space-y-4 md: p-5 align-center "
 
         >
-          <h2 className=" md: hidden lg:block lg:text-[38px] h-[58px] font-catamaran text-[] ">
+          <h2 className=" md:hidden lg:block lg:text-[38px] h-[58px] font-catamaran text-[] ">
             Login to MarketMate
           </h2>
           <h3 className="lg:hidden md: w-[299px] text-[38px] ">
