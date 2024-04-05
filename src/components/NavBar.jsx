@@ -38,14 +38,17 @@ const NavBar = () => {
       </header>
 
       <nav className=" bg-white mb-8 py-4  justify-center">
-        <div className="w-5/6 flex items-center mx-auto">
-          <div className="flex basis-3/12">
+        <div className="w-5/6 flex items-center mx-auto justify-between">
+          <div className="flex ">
+            <button className="md:hidden mr-1">
+              <img src="./menu.png" alt="menu bar icon" />
+            </button>
             <img src="Logo.png" alt="Market mate Logo" />
-            <h1 className="font-lobstertwo text-primaryred text-4xl pl-2s">
+            <h1 className="font-lobstertwo text-primaryred text-3xl md:text-4xl">
               MarketMate
             </h1>
           </div>
-          <div className="flex flex-row basis-4/12 space-x-3 text-gray font-poppins text-xs font-bold">
+          <div className="hidden md:flex flex-row  space-x-3 text-gray font-poppins text-xs font-bold">
             <button>Home</button>
             <div className="flex">
               <button>Shop</button>
@@ -55,13 +58,15 @@ const NavBar = () => {
             <button>Contact</button>
             <button>Pages</button>
           </div>
-          <div className="flex flex-row basis-5/12 space-x-3 justify-end text-gray font-poppins text-xs font-light">
+          <div className="flex flex-row md:space-x-3 justify-end text-gray font-poppins text-xs font-light">
             <span className="material-symbols-outlined">search</span>
             <span className="material-symbols-outlined">shopping_cart</span>
-            <span className="material-symbols-outlined">favorite</span>
+            <span className="hidden md:block material-symbols-outlined">
+              favorite
+            </span>
             <div className="flex flex-row text-secblue font-bold">
               <span className="material-symbols-outlined">person</span>
-              <div className="flex pt-0.5">
+              <div className="hidden md:flex pt-0.5">
                 <button className="px-0.2">Login</button>/
                 <button className="px-0.2 ">Register</button>
               </div>
