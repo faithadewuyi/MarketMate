@@ -1,4 +1,3 @@
-
 import { Link } from "react-router-dom";
 import {
   FaPhone,
@@ -50,27 +49,38 @@ const NavBar = () => {
               MarketMate
             </h1>
           </div>
-          <div className="hidden md:flex flex-row  space-x-3 text-gray font-poppins text-xs font-bold">
-            <button>Home</button>
-            <div className="flex">
+          <div className="hidden md:flex flex-row  space-x-3 text-gray  font-poppins text-xs font-bold">
+            <button className="hover:text-primaryred">Home</button>
+            <div className="flex hover:text-primaryred">
               <button>Shop</button>
               <span className="material-symbols-outlined">expand_more</span>
             </div>
-            <button>About</button>
-           <Link to="/contact"> <button>Contact</button></Link>
-            <button>Pages</button>
+            <button className="hover:text-primaryred">About</button>
+            <Link to="/contact">
+              {" "}
+              <button className="hover:text-primaryred">Contact</button>
+            </Link>
+            <button className="hover:text-primaryred">Pages</button>
           </div>
           <div className="flex flex-row md:space-x-3 justify-end text-gray font-poppins text-xs font-light">
-            <span className="material-symbols-outlined">search</span>
-            <span className="material-symbols-outlined">shopping_cart</span>
-            <span className="hidden md:block material-symbols-outlined">
+            <span className="material-symbols-outlined hover:text-primaryred">
+              search
+            </span>
+            <span className="material-symbols-outlined hover:text-primaryred">
+              shopping_cart
+            </span>
+            <span className="hidden md:block material-symbols-outlined hover:text-primaryred">
               favorite
             </span>
             <div className="flex flex-row text-secblue font-bold">
-              <span className="material-symbols-outlined">person</span>
+              <span className="material-symbols-outlined hover:text-primaryred">
+                person
+              </span>
               <div className="hidden md:flex pt-0.5">
-                <button className="px-0.2">Login</button>/
-                <button className="px-0.2 ">Register</button>
+                <button className="px-0.5 hover:text-primaryred">Login</button>/
+                <button className="px-0.5 hover:text-primaryred">
+                  Register
+                </button>
               </div>
             </div>
           </div>
