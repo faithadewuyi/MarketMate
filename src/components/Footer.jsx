@@ -104,7 +104,7 @@ function Footer() {
             </div>
           </div>
         </div>
-        <div className="md:hidden bg-white w-screen items-center py-3 flex flex-col justify-center">
+        <div className="md:hidden bg-white w-screen items-center py-3 flex flex-col justify-center mt-5">
           <p className="font-poppins text-secblue text-base py-2 text-center w-4/5">
             For further support, you may visit the Help Center or contact our
             customer service team
@@ -115,7 +115,9 @@ function Footer() {
               MarketMate
             </h1>
           </div>
-          <p className="font-bold text-sm text-secblue">All Right Reserved </p>
+          <p className="font-bold text-base text-secblue">
+            All Right Reserved{" "}
+          </p>
         </div>
       </div>
     </>
