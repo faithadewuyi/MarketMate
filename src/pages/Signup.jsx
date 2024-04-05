@@ -35,24 +35,24 @@ function Signup() {
   return (
     <div className="w-screen">
       <NavBar />
-      <div className="mx-auto flex flex-col lg:flex-row items-center lg:space-x-4 justify-between mt-8">
+      <div className="flex flex-col justify-center mx-auto lg:flex-row lg:justify-between items-center lg:space-x-4 mt-6">
         <img
           src="./login.png"
           alt="signup image"
-          className="hidden md:block w-[600px] h-[585px] pt-[75px] rounded-tr-lg rounded-lg p-4"
+          className="hidden md:block w-[685px] h-[700px] pt-[75px] rounded-tr-lg rounded-lg p-4"
         />
         <form
           onSubmit={handleSubmit(onSubmit, onError)}
           noValidate
-          className=" justify-center md:justify-end align-center basis:1/2"
+          className="w-full lg:w-1/2 md:p-5 flex flex-col items-center justify-center"
         >
-          <h3 className="font-catamaran text-black font-bold lg:text-[38px] h-[60px]">
+          <h3 className="lg:block lg:text-[38px] h-[58px] font-catamaran text-black font-bold">
             Create an account
           </h3>
-          <p className="font-poppins text-[16px] font-normal h-[24px]">
+          <p className="font-poppins text-[16px] font-normal h-[24px] items-start">
             Enter your details below
           </p>
-          <div className="space-y-2 mt-3">
+          <div className="space-y-1">
             <InputField
               placeholder="Name"
               id="name"
@@ -89,7 +89,7 @@ function Signup() {
           </div>
           <button
             disabled={isSubmitting}
-            className="bg-mred text-white p-2 rounded-md hover:bg-mred  py-[16px] px-[48px] my-2 font-poppins w-[270px]"
+            className="bg-mred text-white p-2 rounded-md hover:bg-mred  py-[16px] px-[48px] my-3 font-poppins w-[270px]"
           >
             Create Account
           </button>
