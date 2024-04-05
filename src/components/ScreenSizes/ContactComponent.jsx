@@ -5,7 +5,7 @@ import ContactMobile from '../ContactMobile';
 const ContactComponent = () => {
   const [width] = windowSize();
 
-  
+  // Choose a breakpoint for switching between components
   const breakpoint = 768; // Example breakpoint
 
   return (
