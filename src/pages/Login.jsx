@@ -35,33 +35,36 @@ const Login = () => {
   }, [isSubmitSuccessful, reset]);
 
   return (
-    <div className="w-screen">
+    <div className="w-full overflow-x-hidden bg-white">
       <NavBar />
-      <div className="flex flex-col justify-center mx-auto lg:flex-row lg:justify-between items-center lg:space-x-4 mt-6">
-        <img
-          src="./login.png"
-          alt="login image"
-          className="hidden lg:block w-[805px] h-[781px] pt-[75px] rounded-tr-lg rounded-lg p-4"
-        />
+      <div className="flex flex-col lg:gap-10 lg:flex-row mb-3">
+        <div className="hidden lg:block basis-1/2">
+          <img
+            src="./login.png"
+            alt="login image"
+            className="rounded-tr-lg rounded-lg"
+          />
+        </div>
+
         <form
           onSubmit={handleSubmit(onSubmit, onError)}
           noValidate
-          className="w-full lg:w-1/2 space-y-4 md:p-5 flex flex-col items-center justify-center mx-auto md:mx-0"
+          className="mx-auto lg:mx-0 lg:w-[380px] my-auto space-y-2 flex flex-col"
         >
-          <h2 className="md:hidden lg:block lg:text-[38px] h-[58px] font-catamaran">
+          <h2 className="hidden md:block lg:text-[38px] font-catamaran">
             Login to MarketMate
           </h2>
-          <h3 className=" lg:hidden md: w-[299px] text-[42px] ">
+          <h3 className=" md:hidden lg:w-[299px] text-[42px] ">
             Log in to
             <span className="text-mred font-bold font-lobstertwo pl-1">
               MarketMate
             </span>
           </h3>
-          <div>
-            <p className="block mb-2 lg:text-[16px] text-textcol font-poppins">
-              Enter your details below
-            </p>
+          <p className="lg:text-[16px] text-textcol font-poppins">
+            Enter your details below
+          </p>
 
+          <div>
             <InputField
               placeholder="Email or Phone Number"
               id="email"
@@ -89,14 +92,17 @@ const Login = () => {
               patternMessage="Password should be 7-16 characters and include at least 1 uppercase letter, 1 number and 1 special character"
             />
           </div>
-          <div>
+          <div className="flex justify-between">
             <button
               disabled={isSubmitting}
-              className="w-[143px] h-[56px] bg-mred text-white p-2 rounded-md hover:bg-mred  py-[16px] px-[48px] m-4"
+              className="w-[143px] h-[56px] bg-mred text-white p-2 rounded-lg hover:bg-mred  py-[16px] px-[48px] m-4"
             >
               Log in
             </button>
-            <Link to="/forgot-password" className="text-mred">
+            <Link
+              to="/forgot-password"
+              className="text-mred items-center self-center"
+            >
               Forgot Password?
             </Link>
           </div>

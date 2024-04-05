@@ -33,26 +33,29 @@ function Signup() {
   }, [isSubmitSuccessful, reset]);
 
   return (
-    <div className="w-screen">
+    <div className="w-full overflow-x-hidden bg-white">
       <NavBar />
-      <div className="flex flex-col justify-center mx-auto lg:flex-row lg:justify-between items-center lg:space-x-4 mt-6">
-        <img
-          src="./login.png"
-          alt="signup image"
-          className="hidden md:block w-[755px] h-[700px] pt-[75px] rounded-tr-lg rounded-lg p-4"
-        />
+      <div className="flex flex-col lg:gap-12 lg:flex-row mb-3">
+        <div className="hidden lg:block basis-1/2">
+          <img
+            src="./login.png"
+            alt="login image"
+            className="rounded-tr-lg rounded-lg"
+          />
+        </div>
+
         <form
           onSubmit={handleSubmit(onSubmit, onError)}
           noValidate
-          className="w-full lg:w-1/2 md:p-5 flex flex-col items-center justify-center"
+          className="mx-auto mt-3 lg:mx-0 lg:w-[380px] lg:my-auto lg:mt-0 space-y-2 flex flex-col"
         >
-          <h3 className="lg:block lg:text-[38px] font-catamaran text-black font-bold">
+          <h3 className="text-[38px] font-catamaran text-black font-bold">
             Create an account
           </h3>
           <p className="font-poppins text-[16px] font-normal items-start py-1">
             Enter your details below
           </p>
-          <div className="space-y-1">
+          <div>
             <InputField
               placeholder="Name"
               id="name"
@@ -87,21 +90,22 @@ function Signup() {
               patternMessage="Password should be 7-16 characters and include at least 1 uppercase letter, 1 number and 1 special character"
             />
           </div>
+
           <button
             disabled={isSubmitting}
-            className="bg-mred text-white p-2 rounded-md hover:bg-mred  py-[16px] px-[48px] my-3 font-poppins w-[270px]"
+            className="bg-mred text-white p-2 rounded-md hover:bg-mred  py-[16px] px-[48px] my-2 font-poppins w-full"
           >
             Create Account
           </button>
 
           <button
             type="button"
-            className="flex items-center font-medium text-gray-800 border rounded-lg bg-white hover:bg-gray-100 lg:w-[270px] lg: h-[56px]  gap-2 py-2 px-8"
+            className="flex items-center font-medium text-gray-800 border rounded-lg border-gray hover:border-primaryred lg:w-full gap-2 px-8 text-center"
           >
             <img src="./google.svg" alt="Google logo" className=" w-2 h-5 " />
             Sign in with Google
           </button>
-          <div className="flex flex-row space-x-1 pt-2">
+          <div className="flex flex-row gap-4 pt-2 justify-center">
             <p>Already have account?</p>
             <Link
               to="/"
