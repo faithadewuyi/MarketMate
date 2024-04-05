@@ -1,7 +1,10 @@
-
+import NavBar from "./NavBar";
+import Footer from "./Footer";
 
 const ForgotPassword = () => {
   return (
+    <div className="w-screen">
+    <NavBar/>
     <div className="items-center  bg-dgray min-h-screen flex justify-center">
       <div className="bg-white p-8  shadow-lg max-w-md mx-auto">
      <h5 className="font-catamara text-secblue text-[35px] ">Forgot Password</h5>
@@ -13,6 +16,8 @@ const ForgotPassword = () => {
      type="submit"
      >Continue</button>
     </div>
+    </div>
+    <Footer/>
     </div>
   )
 }

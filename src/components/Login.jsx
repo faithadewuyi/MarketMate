@@ -35,6 +35,8 @@ const Login = () => {
   }, [isSubmitSuccessful, reset]);
 
   return (
+
+    
     <div className="w-screen">
       <NavBar />
       <div className="w-5/6 flex flex-col lg:flex-row justify-between items-center lg:space-x-4  mt-6">
@@ -47,8 +49,9 @@ const Login = () => {
           onSubmit={handleSubmit(onSubmit, onError)}
           noValidate
           className=" lg:w-1/2 space-y-4 md: p-5 align-center "
+
         >
-          <h2 className=" md: hidden lg:block lg:text-[38px] h-[58px] font-catamaran text-[] ">
+          <h2 className=" md:hidden lg:block lg:text-[38px] h-[58px] font-catamaran text-[] ">
             Login to MarketMate
           </h2>
           <h3 className="lg:hidden md: w-[299px] text-[38px] ">
