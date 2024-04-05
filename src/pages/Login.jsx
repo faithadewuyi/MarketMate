@@ -37,7 +37,7 @@ const Login = () => {
   return (
     <div className="w-screen">
       <NavBar />
-      <div className="w-5/6 flex flex-col justify-center mx-auto lg:flex-row lg:justify-between items-center lg:space-x-4 mt-6">
+      <div className="flex flex-col justify-center mx-auto lg:flex-row lg:justify-between items-center lg:space-x-4 mt-6">
         <img
           src="./login.png"
           alt="login image"
@@ -109,7 +109,6 @@ const Login = () => {
           </button>
         </form>
       </div>
-
       <Footer />
     </div>
   );

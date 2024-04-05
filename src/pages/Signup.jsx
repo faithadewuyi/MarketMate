@@ -35,7 +35,7 @@ function Signup() {
   return (
     <div className="w-screen">
       <NavBar />
-      <div className="w-5/6 flex flex-col lg:flex-row items-center lg:space-x-4 justify-between mt-8">
+      <div className="mx-auto flex flex-col lg:flex-row items-center lg:space-x-4 justify-between mt-8">
         <img
           src="./login.png"
           alt="signup image"
