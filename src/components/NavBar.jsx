@@ -53,7 +53,7 @@ const NavBar = () => {
               <button>Shop</button>
               <span className="material-symbols-outlined">expand_more</span>
             </div>
-            <button>About</button>
+            <Link to="/about"> <button>About</button></Link>
            <Link to="/contact"> <button>Contact</button></Link>
             <button>Pages</button>
           </div>
