@@ -1,6 +1,7 @@
 import PropTypes from "prop-types";
 
 const InputField = ({
+  label,
   placeholder,
   type,
   id,
@@ -11,6 +12,7 @@ const InputField = ({
   patternMessage,
 }) => (
   <div>
+    <label htmlFor={id}>{label}</label>
     <div className={`${error ? "border-primaryred" : ""}`}>
       <input
         placeholder={placeholder}
@@ -31,6 +33,7 @@ const InputField = ({
 );
 
 InputField.propTypes = {
+  label: PropTypes.string,
   placeholder: PropTypes.string,
   name: PropTypes.string.isRequired,
   type: PropTypes.string,

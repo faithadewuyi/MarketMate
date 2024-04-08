@@ -1,6 +1,7 @@
 import React from "react";
 import NavBar from "../components/NavBar";
 import Footer from "../components/Footer";
+import { Link } from "react-router-dom";
 
 function ErrorPage() {
   return (
@@ -14,9 +15,12 @@ function ErrorPage() {
         <p className="text-base text-center">
           Oops! The page you requested was not found
         </p>
-        <button className="bg-primaryred text-base font-[500] py-2 px-6 my-4 text-white">
+        <Link
+          to="/"
+          className="bg-primaryred text-base font-[500] py-2 px-6 my-4 text-white hover:bg-mred"
+        >
           Back to home page
-        </button>
+        </Link>
       </div>
       <Footer />
     </div>

@@ -4,6 +4,7 @@ import { Route, Routes } from "react-router-dom";
 import Signup from "./pages/Signup";
 import ContactComponent from "./components/ContactComponent";
 import ErrorPage from "./pages/ErrorPage";
+import Account from "./pages/Account";
 
 const App = () => {
   return (
@@ -14,6 +15,7 @@ const App = () => {
         <Route path="forgot-password" element={<ForgotPassword />} />
         <Route path="/contact" element={<ContactComponent />} />
         <Route path="/error" element={<ErrorPage />} />
+        <Route path="/account" element={<Account />} />
       </Routes>
     </div>
   );
