@@ -1,11 +1,12 @@
 import ForgotPassword from "./components/ForgotPassword";
 import Login from "./components/Login";
 import { Route, Routes } from "react-router-dom";
-import Signup from "./components/Signup";
-import About from "./components/About";
-import ContactComponent from "./components/ScreenSizes/ContactComponent";
-import Ongoing from "./components/Profile/Ongoing";
-import ReturnedOrders from "./components/Profile/ReturnedOrders";
+
+import Signup from "./pages/Signup";
+import ContactComponent from "./components/ContactComponent";
+import ErrorPage from "./pages/ErrorPage";
+import Account from "./pages/Account";
+
 
 const App = () => {
   return (
@@ -14,10 +15,11 @@ const App = () => {
         <Route path="/" element={<Login />} />
         <Route path="sign-up" element={<Signup />} />
         <Route path="forgot-password" element={<ForgotPassword />} />
-        <Route path="/about" element={<About/>} />
-        <Route path="/contact" element={<ContactComponent/>} />
-        <Route path="/ongoing-order" element={<Ongoing/>} />
-        <Route path="/returned-order" element={<ReturnedOrders/>} />
+
+        <Route path="/contact" element={<ContactComponent />} />
+        <Route path="/error" element={<ErrorPage />} />
+        <Route path="/account" element={<Account />} />
+
       </Routes>
     </div>
   );

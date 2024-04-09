@@ -15,7 +15,7 @@ function Signup() {
     mode: "onTouched",
   });
 
-  const { register, handleSubmit, reset, formState } = form;
+  const { register, handleSubmit, reset, formState, watch } = form;
   const { errors, isSubmitSuccessful, isSubmitting } = formState;
 
   const onSubmit = (data) => {
@@ -31,6 +31,8 @@ function Signup() {
       reset();
     }
   }, [isSubmitSuccessful, reset]);
+
+  const name = watch("name");
 
   return (
     <div className="w-screen">
@@ -54,7 +56,7 @@ function Signup() {
           </p>
           <div className="space-y-2 mt-3">
             <InputField
-              placeholder="Name"
+              placeholder="First and Last name"
               id="name"
               name="name"
               register={register}
