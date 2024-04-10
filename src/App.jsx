@@ -2,10 +2,12 @@ import ForgotPassword from "./components/ForgotPassword";
 import Login from "./components/Login";
 import { Route, Routes } from "react-router-dom";
 
-import Signup from "./pages/Signup";
-import ContactComponent from "./components/ContactComponent";
+import Signup from "./components/Signup"
+import ContactComponent from "./components/ScreenSizes/ContactComponent";
 import ErrorPage from "./pages/ErrorPage";
-import Account from "./pages/Account";
+import Account from "./components/Account";
+import Ongoing from "./components/Profile/Ongoing";
+import ReturnedOrders from "./components/Profile/ReturnedOrders";
 
 
 const App = () => {
@@ -19,6 +21,8 @@ const App = () => {
         <Route path="/contact" element={<ContactComponent />} />
         <Route path="/error" element={<ErrorPage />} />
         <Route path="/account" element={<Account />} />
+        <Route path="/ongoing-order" element={ <Ongoing />} />
+        <Route path="/returned-order" element={ <ReturnedOrders />} />
 
       </Routes>
     </div>

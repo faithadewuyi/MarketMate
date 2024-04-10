@@ -1,8 +1,8 @@
 import { useForm } from "react-hook-form";
 import { useEffect } from "react";
-import React from "react";
-import InputField from "../components/InputField";
 
+import InputField from "../components/InputField";
+import Account from "./Account";
 function Profile() {
   const form = useForm({
     defaultValues: {
@@ -36,6 +36,7 @@ function Profile() {
 
   return (
     <div>
+      <Account/>
       <form
         onSubmit={handleSubmit(onSubmit, onError)}
         noValidate
@@ -132,6 +133,7 @@ function Profile() {
           />
         </div>
       </form>
+
     </div>
   );
 }

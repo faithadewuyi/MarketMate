@@ -1,7 +1,7 @@
 import NavBar from "../components/NavBar";
 import Footer from "../components/Footer";
 import { useLocation } from "react-router-dom";
-import { Route, Routes } from "react-router-dom";
+import { Routes, Route, Link } from "react-router-dom";
 import Profile from "./Profile";
 
 function Account() {
@@ -70,14 +70,16 @@ function Account() {
               <h3 className="text-terblue font-medium pb-0.5">My Orders</h3>
               <ul className="px-3 space-y-0.5">
                 <li>
-                  <a href="#" className="hover:text-primaryred">
-                    Ongoing/Delivered
-                  </a>
+                  
+                  <Link to="/ongoing-order" className="hover:text-primaryred">
+                     Ongoing/Delivered
+                  </Link>
+                    
                 </li>
                 <li>
-                  <a href="#" className="hover:text-primaryred">
-                    Returns/Cancellations
-                  </a>
+                 <Link to="/ongoing-order" className="hover:text-primaryred">
+                  Returns/Cancellations
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -106,7 +108,7 @@ function Account() {
           <button className="text-primaryred text-left">Delete Account</button>
         </div>
         <div className="hidden lg:block lg:basis-3/4">
-          <Routes>
+           <Routes>
             <Route path="/" element={<Profile />} />
           </Routes>
         </div>
