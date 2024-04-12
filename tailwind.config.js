@@ -60,6 +60,7 @@ export default {
         darkblue: "#13345B",
         textcol: "#06101B",
         gray: "#828282",
+        deepgray: "#191919",
       },
       fontFamily: {
         poppins: ["Poppins", "sans-serif"],
@@ -95,5 +96,7 @@ export default {
       },
     },
   },
+
+  plugins: [],
 
 };
